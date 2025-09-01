@@ -24,7 +24,7 @@ const Navbar = () => {
           href="#buynow"
           className="hidden md:block bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold hover:shadow-[0_0_20px_rgba(255,255,0,0.7)] transition"
         >
-          Buy Now
+          Claim Now!
         </a>
 
         {/* Hamburger Button - Mobile */}
@@ -51,7 +51,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className="bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold hover:shadow-[0_0_20px_rgba(255,255,0,0.7)] transition"
           >
-            Buy Now
+            Claim Now!
           </a>
         </ul>
       )}
