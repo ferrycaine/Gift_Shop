@@ -1,45 +1,68 @@
 import gcardImg from "./assets/gcard.png";
+import { useState } from "react";
 
 const giftCards = [
-  { amount: "$5", region: "USA", image: gcardImg },
-  { amount: "$10", region: "USA", image: gcardImg },
-  { amount: "$20", region: "USA", image: gcardImg },
-  { amount: "$30", region: "USA", image: gcardImg },
-  { amount: "$40", region: "USA", image: gcardImg },
-  { amount: "$50", region: "USA", image: gcardImg },
-  { amount: "$60", region: "USA", image: gcardImg },
-  { amount: "$5", region: "Australia", image: gcardImg },
-  { amount: "$10", region: "Australia", image: gcardImg },
-  { amount: "$20", region: "Australia", image: gcardImg },
-  { amount: "$30", region: "Australia", image: gcardImg },
-  { amount: "$40", region: "Australia", image: gcardImg },
-  { amount: "$50", region: "Australia", image: gcardImg },
-  { amount: "$60", region: "Australia", image: gcardImg },
-  { amount: "€5", region: "Germany", image: gcardImg },
-  { amount: "€10", region: "Germany", image: gcardImg },
-  { amount: "€20", region: "Germany", image: gcardImg },
-  { amount: "€30", region: "Germany", image: gcardImg },
-  { amount: "€40", region: "Germany", image: gcardImg },
-  { amount: "€50", region: "Germany", image: gcardImg },
-  { amount: "€60", region: "Germany", image: gcardImg },
-  { amount: "$5", region: "Canada", image: gcardImg },
-  { amount: "$10", region: "Canada", image: gcardImg },
-  { amount: "$20", region: "Canada", image: gcardImg },
-  { amount: "$30", region: "Canada", image: gcardImg },
-  { amount: "$40", region: "Canada", image: gcardImg },
-  { amount: "$50", region: "Canada", image: gcardImg },
-  { amount: "$60", region: "Canada", image: gcardImg },
-  { amount: "$70", region: "USA", image: gcardImg },
-  { amount: "$80", region: "USA", image: gcardImg },
-  { amount: "$90", region: "USA", image: gcardImg },
-  { amount: "$100", region: "USA", image: gcardImg },
-  { amount: "$70", region: "Canada", image: gcardImg },
-  { amount: "$80", region: "Canada", image: gcardImg },
-  { amount: "$90", region: "Canada", image: gcardImg },
-  { amount: "$100", region: "Canada", image: gcardImg },
+  // USA
+  { amount: "$5", region: "USA", image: gcardImg, link: "https://example.com/$5-USA" },
+  { amount: "$10", region: "USA", image: gcardImg, link: "https://example.com/$10-USA" },
+  { amount: "$20", region: "USA", image: gcardImg, link: "https://example.com/$20-USA" },
+  { amount: "$30", region: "USA", image: gcardImg, link: "https://example.com/$30-USA" },
+  { amount: "$40", region: "USA", image: gcardImg, link: "https://example.com/$40-USA" },
+  { amount: "$50", region: "USA", image: gcardImg, link: "https://example.com/$50-USA" },
+  { amount: "$60", region: "USA", image: gcardImg, link: "https://example.com/$60-USA" },
+  { amount: "$70", region: "USA", image: gcardImg, link: "https://example.com/$70-USA" },
+  { amount: "$80", region: "USA", image: gcardImg, link: "https://example.com/$80-USA" },
+  { amount: "$90", region: "USA", image: gcardImg, link: "https://example.com/$90-USA" },
+  { amount: "$100", region: "USA", image: gcardImg, link: "https://example.com/$100-USA" },
+
+  // Australia
+  { amount: "$5", region: "Australia", image: gcardImg, link: "https://example.com/$5-Australia" },
+  { amount: "$10", region: "Australia", image: gcardImg, link: "https://example.com/$10-Australia" },
+  { amount: "$20", region: "Australia", image: gcardImg, link: "https://example.com/$20-Australia" },
+  { amount: "$30", region: "Australia", image: gcardImg, link: "https://example.com/$30-Australia" },
+  { amount: "$40", region: "Australia", image: gcardImg, link: "https://example.com/$40-Australia" },
+  { amount: "$50", region: "Australia", image: gcardImg, link: "https://example.com/$50-Australia" },
+  { amount: "$60", region: "Australia", image: gcardImg, link: "https://example.com/$60-Australia" },
+
+  // Germany
+  { amount: "€5", region: "Germany", image: gcardImg, link: "https://example.com/€5-Germany" },
+  { amount: "€10", region: "Germany", image: gcardImg, link: "https://example.com/€10-Germany" },
+  { amount: "€20", region: "Germany", image: gcardImg, link: "https://example.com/€20-Germany" },
+  { amount: "€30", region: "Germany", image: gcardImg, link: "https://example.com/€30-Germany" },
+  { amount: "€40", region: "Germany", image: gcardImg, link: "https://example.com/€40-Germany" },
+  { amount: "€50", region: "Germany", image: gcardImg, link: "https://example.com/€50-Germany" },
+  { amount: "€60", region: "Germany", image: gcardImg, link: "https://example.com/€60-Germany" },
+
+  // Canada
+  { amount: "$5", region: "Canada", image: gcardImg, link: "https://example.com/$5-Canada" },
+  { amount: "$10", region: "Canada", image: gcardImg, link: "https://example.com/$10-Canada" },
+  { amount: "$20", region: "Canada", image: gcardImg, link: "https://example.com/$20-Canada" },
+  { amount: "$30", region: "Canada", image: gcardImg, link: "https://example.com/$30-Canada" },
+  { amount: "$40", region: "Canada", image: gcardImg, link: "https://example.com/$40-Canada" },
+  { amount: "$50", region: "Canada", image: gcardImg, link: "https://example.com/$50-Canada" },
+  { amount: "$60", region: "Canada", image: gcardImg, link: "https://example.com/$60-Canada" },
+  { amount: "$70", region: "Canada", image: gcardImg, link: "https://example.com/$70-Canada" },
+  { amount: "$80", region: "Canada", image: gcardImg, link: "https://example.com/$80-Canada" },
+  { amount: "$90", region: "Canada", image: gcardImg, link: "https://example.com/$90-Canada" },
+  { amount: "$100", region: "Canada", image: gcardImg, link: "https://example.com/$100-Canada" },
 ];
 
+
 const BuyNowGiftCards = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleClaimClick = (link) => {
+    setIsLoading(true);
+    try {
+      window.open(link, "_blank", "noopener,noreferrer");
+    } catch (error) {
+      console.error("Error opening gift card link:", error);
+      alert("Sorry, there was an issue accessing the gift card. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="buynow" className="p-12 bg-slate-900 mt-10 rounded-4xl max-w-[1380px] mx-auto">
       <div className="px-4 sm:px-6 lg:px-8">
@@ -79,8 +102,12 @@ const BuyNowGiftCards = () => {
               </div>
 
               {/* Button */}
-              <button className="bg-white text-lg text-black px-4 py-1 mt-3 rounded-lg font-medium transition hover:bg-gray-500 hover:text-gray-300 hover:shadow-[0_0_15px_rgba(160,160,160,0.9)]">
-                Claim Now
+              <button
+                onClick={() => handleClaimClick(card.link)}
+                disabled={isLoading}
+                className="bg-white text-lg text-black px-4 py-1 mt-3 rounded-lg font-medium transition hover:bg-gray-500 hover:text-gray-300 hover:shadow-[0_0_15px_rgba(160,160,160,0.9)]"
+              >
+                {isLoading ? "Loading..." : "Claim Now"}
               </button>
 
               {/* Footer */}
