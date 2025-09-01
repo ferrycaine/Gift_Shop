@@ -1,23 +1,115 @@
 import iphone16 from './assets/iphonechatgpt.jpg'
 import macbook from './assets/macbookchatgpt.png'
-import netflix from './assets/netflixchatgpt.png'
-import giftcard from './assets/giftchatgpt.png'
+import GrabYourWalmartGiftCard from './assets/GrabYourWalmartGiftCard.png'
 import triptobalichatgpt from './assets/triptobalichatgpt.png'
 import amazonGiftChaptgpt from './assets/amazonGiftChaptgpt.png'
 import gamingChapgpt from './assets/gamingChapgpt.png'
 import spotifyChatgpt from './assets/spotifyChatgpt.png'
+import LululemonGiftCard from './assets/LululemonGiftCard.png'
+import { useState } from 'react'
 
 const FreeCardSection2 = () => {
   const cards = [
-    { title: "Win an iPhone 16 Pro! Join Now", img: iphone16, bg: "bg-slate-800", headerBg: "bg-slate-900", btnBg: "bg-slate-900", btnHover: "hover:bg-slate-700" },
-    { title: "Get a Free MacBook Today", img: macbook, bg: "bg-cyan-900", headerBg: "bg-cyan-950", btnBg: "bg-cyan-950", btnHover: "hover:bg-cyan-800" },
-    { title: "Join & Win a Gaming Console", img: gamingChapgpt, bg: "bg-[#4F4C45]", headerBg: "bg-[#2a2824]", btnBg: "bg-[#2a2824]", btnHover: "hover:bg-[#4F4C45]" },
-    { title: "Claim Your $1000 Gift Card", img: giftcard, bg: "bg-amber-800", headerBg: "bg-amber-950", btnBg: "bg-amber-950", btnHover: "hover:bg-amber-800" },
-    { title: "Netflix Subscription Giveaway", img: netflix, bg: "bg-red-900", headerBg: "bg-red-950", btnBg: "bg-red-950", btnHover: "hover:bg-red-900" },
-    { title: "Free Spotify Premium for 6 Months", img: spotifyChatgpt, bg: "bg-emerald-900", headerBg: "bg-emerald-950", btnBg: "bg-emerald-950", btnHover: "hover:bg-emerald-900" },
-    { title: "Win a Trip to Bali and Explore!", img: triptobalichatgpt, bg: "bg-[#663C1F]", headerBg: "bg-[#3D2412]", btnBg: "bg-[#3D2412]", btnHover: "hover:bg-[#663C1F]" },
-    { title: "Get Free Amazon Vouchers", img: amazonGiftChaptgpt, bg: "bg-indigo-900", headerBg: "bg-indigo-950", btnBg: "bg-indigo-950", btnHover: "hover:bg-indigo-900" },
+    // CPA Links
+    { 
+      title: "Grab Your Walmart Gift Card!", 
+      img: GrabYourWalmartGiftCard, 
+      bg: "bg-amber-800", 
+      headerBg: "bg-amber-950", 
+      btnBg: "bg-amber-950", 
+      btnHover: "hover:bg-amber-800", 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=69869",
+      description: "Enter your information now for a chance to win." 
+    },
+    // CPA Links
+    { 
+      title: "Take a chance at a $100 Lululemon Gift Card!", 
+      img: LululemonGiftCard, 
+      bg: "bg-red-900", 
+      headerBg: "bg-red-950", 
+      btnBg: "bg-red-950", 
+      btnHover: "hover:bg-red-900", 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=71817",
+      description: "Enter your information now for a chance to win." 
+    },
+    
+    { 
+      title: "Win an iPhone 16 Pro! Join Now", 
+      img: iphone16, 
+      bg: "bg-slate-800", 
+      headerBg: "bg-slate-900", 
+      btnBg: "bg-slate-900", 
+      btnHover: "hover:bg-slate-700", 
+      link: "https://www.apple.com",
+      description: "Limited time offer! Get the new iPhone 16 Pro for free." 
+    },
+    { 
+      title: "Get a Free MacBook Today", 
+      img: macbook, 
+      bg: "bg-cyan-900", 
+      headerBg: "bg-cyan-950", 
+      btnBg: "bg-cyan-950", 
+      btnHover: "hover:bg-cyan-800", 
+      link: "https://www.apple.com/macbook",
+      description: "Don’t miss your chance to grab a sleek new MacBook!" 
+    },
+    { 
+      title: "Join & Win a Gaming Console", 
+      img: gamingChapgpt, 
+      bg: "bg-[#4F4C45]", 
+      headerBg: "bg-[#2a2824]", 
+      btnBg: "bg-[#2a2824]", 
+      btnHover: "hover:bg-[#4F4C45]", 
+      link: "https://www.playstation.com",
+      description: "Enter now to win the ultimate next-gen gaming console." 
+    },
+    
+    { 
+      title: "Free Spotify Premium for 6 Months", 
+      img: spotifyChatgpt, 
+      bg: "bg-emerald-900", 
+      headerBg: "bg-emerald-950", 
+      btnBg: "bg-emerald-950", 
+      btnHover: "hover:bg-emerald-900", 
+      link: "https://www.spotify.com/premium",
+      description: "Enjoy ad-free music with 6 months of Spotify Premium free." 
+    },
+    { 
+      title: "Win a Trip to Bali and Explore!", 
+      img: triptobalichatgpt, 
+      bg: "bg-[#663C1F]", 
+      headerBg: "bg-[#3D2412]", 
+      btnBg: "bg-[#3D2412]", 
+      btnHover: "hover:bg-[#663C1F]", 
+      link: "https://www.tripadvisor.com",
+      description: "Fly to Bali for free and enjoy a once-in-a-lifetime vacation." 
+    },
+    { 
+      title: "Get Free Amazon Vouchers", 
+      img: amazonGiftChaptgpt, 
+      bg: "bg-indigo-900", 
+      headerBg: "bg-indigo-950", 
+      btnBg: "bg-indigo-950", 
+      btnHover: "hover:bg-indigo-900", 
+      link: "https://www.amazon.com/vouchers",
+      description: "Shop freely with exclusive Amazon voucher giveaways." 
+    },
   ]
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleOfferClick = async (link) => {
+    setIsLoading(true);
+
+    try {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    } catch (error) {
+      console.error('Error opening offer:', error);
+      alert('Sorry, there was an issue accessing the offer. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <section id="exciting" className="p-12 bg-orange-200 mt-20 rounded-4xl max-w-[1380px] mx-auto">
@@ -26,10 +118,10 @@ const FreeCardSection2 = () => {
           Exciting Offers!
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {cards.map((card, idx) => (
             <div key={idx} className={`shadow-lg rounded-xl mx-auto mb-10 w-[330px] md:w-auto h-[510px] p-6 hover:scale-105 transform transition duration-300 cursor-pointer ${card.bg}`}>
-              
+
               {/* Card Header */}
               <div className={`${card.headerBg} rounded-xl p-3 text-white relative shadow-lg
                               hover:shadow-[0_0_20px_rgba(0,255,255,0.8)] 
@@ -45,15 +137,17 @@ const FreeCardSection2 = () => {
                 alt={card.title}
               />
 
-              {/* Glowing Text */}
+              {/* Dynamic Description */}
               <p className="text-base text-white animate-pulse drop-shadow-[0_0_10px_rgba(0,255,255,0.8)] text-center">
-                Limited time offer. Click to join now!
+                {card.description}
               </p>
 
               {/* Button */}
               <button className={`mt-4 ${card.btnBg} text-white px-4 py-2 rounded 
                                  ${card.btnHover} hover:shadow-[0_0_20px_rgba(0,255,255,0.8)] 
-                                 transition duration-300 w-full font-semibold`}>
+                                 transition duration-300 w-full font-semibold`}
+                onClick={() => handleOfferClick(card.link)}
+                disabled={isLoading}>
                 Join Now
               </button>
             </div>
@@ -64,4 +158,4 @@ const FreeCardSection2 = () => {
   )
 }
 
-export default FreeCardSection2;
+export default FreeCardSection2
