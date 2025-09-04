@@ -1,6 +1,6 @@
 import NFLShopGiftCard from './assets/NFLShopGiftCard.png'
-import macbook from './assets/macbookchatgpt.png'
-import GrabYourWalmartGiftCard from './assets/GrabYourWalmartGiftCard.png'
+import GetthelatestSamsungS25 from './assets/GetthelatestSamsungS25.png'
+import DunkinDonutsGiftCard from './assets/DunkinDonutsGiftCard.png'
 import triptobalichatgpt from './assets/triptobalichatgpt.png'
 import amazonGiftChaptgpt from './assets/amazonGiftChaptgpt.png'
 import gamingChapgpt from './assets/gamingChapgpt.png'
@@ -12,16 +12,16 @@ const FreeCardSection2 = () => {
   const cards = [
     // CPA Links
     { 
-      title: "Grab Your Walmart Gift Card!", 
-      img: GrabYourWalmartGiftCard, 
+      title: "Take a chance at a $100 Dunkin Donuts Gift Card!", 
+      img: DunkinDonutsGiftCard, 
       bg: "bg-amber-800", 
       headerBg: "bg-amber-950", 
       btnBg: "bg-amber-950", 
       btnHover: "hover:bg-amber-800", 
-      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=69869",
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=68384",
       description: "Enter your information now for a chance to win. (US - IOS)" 
     },
-    
+
     // CPA Links
     { 
       title: "Be the one to get a 7-Eleven Gift Card!", 
@@ -46,17 +46,18 @@ const FreeCardSection2 = () => {
       description: "Enter your information now for a chance to win. (US - ANDROID)" 
     },
 
-    // CPA Links
+    // CPA Links 
     { 
-      title: "Get a Free MacBook Today", 
-      img: macbook, 
+      title: "Get the latest Samsung S25!", 
+      img: GetthelatestSamsungS25, 
       bg: "bg-cyan-900", 
       headerBg: "bg-cyan-950", 
       btnBg: "bg-cyan-950", 
       btnHover: "hover:bg-cyan-800", 
-      link: "https://www.apple.com/macbook",
-      description: "Don’t miss your chance to grab a sleek new MacBook!" 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=68927",
+      description: "Enter your information now for a chance to win. (FRANCE - IOS)" 
     },
+    
     { 
       title: "Join & Win a Gaming Console", 
       img: gamingChapgpt, 
