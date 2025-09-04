@@ -3,10 +3,10 @@
 import NFLShopGiftCard from './assets/For_GRIP/NFLShopGiftCard.png'
 import GetthelatestSamsungS25 from './assets/For_GRIP/GetthelatestSamsungS25.png'
 import DunkinDonutsGiftCard from './assets/For_GRIP/DunkinDonutsGiftCard.png'
-import triptobalichatgpt from './assets/For_GRIP/triptobalichatgpt.png'
-import amazonGiftChaptgpt from './assets/For_GRIP/amazonGiftChaptgpt.png'
-import gamingChapgpt from './assets/For_GRIP/gamingChapgpt.png'
-import spotifyChatgpt from './assets/For_GRIP/spotifyChatgpt.png'
+import SupermarketVoucher from './assets/For_GRIP/SupermarketVoucher.png'
+import BecomeAMillionaire from './assets/For_GRIP/BecomeAMillionaire.png'
+import StartPreparingForEaster from './assets/For_GRIP/StartPreparingForEaster.png'
+import MysteryBoxPrize from './assets/For_GRIP/MysteryBoxPrize.png'
 import ElevenGiftCard from './assets/For_GRIP/ElevenGiftCard.png'
 
 import { useState } from 'react'
@@ -58,49 +58,55 @@ const FreeCardSection2 = () => {
       btnBg: "bg-cyan-950", 
       btnHover: "hover:bg-cyan-800", 
       link: "https://singingfiles.com/show.php?l=0&u=2442448&id=68927",
-      description: "Enter your information now for a chance to win. (FRANCE - IOS)" 
+      description: "Enter your information now for a chance to win. (France - IOS)" 
     },
     
+    // CPA Links
     { 
-      title: "Join & Win a Gaming Console", 
-      img: gamingChapgpt, 
+      title: "Start preparing for Easter now!", 
+      img: StartPreparingForEaster, 
       bg: "bg-[#4F4C45]", 
       headerBg: "bg-[#2a2824]", 
       btnBg: "bg-[#2a2824]", 
       btnHover: "hover:bg-[#4F4C45]", 
-      link: "https://www.playstation.com",
-      description: "Enter now to win the ultimate next-gen gaming console." 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=68994",
+      description: "Enter your details to get started. (Netherlands - ANDROID)" 
     },
     
+    // CPA Links 
     { 
-      title: "Free Spotify Premium for 6 Months", 
-      img: spotifyChatgpt, 
+      title: "Get your random Mystery Box Prize Now!", 
+      img: MysteryBoxPrize, 
       bg: "bg-emerald-900", 
       headerBg: "bg-emerald-950", 
       btnBg: "bg-emerald-950", 
       btnHover: "hover:bg-emerald-900", 
-      link: "https://www.spotify.com/premium",
-      description: "Enjoy ad-free music with 6 months of Spotify Premium free." 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=66401",
+      description: "Enter your details for a chance to win. (Singapore - ANDROID)" 
     },
+
+    // CPA Links
     { 
-      title: "Win a Trip to Bali and Explore!", 
-      img: triptobalichatgpt, 
+      title: "Get €250 Supermarket Voucher now!", 
+      img: SupermarketVoucher, 
       bg: "bg-[#663C1F]", 
       headerBg: "bg-[#3D2412]", 
       btnBg: "bg-[#3D2412]", 
       btnHover: "hover:bg-[#663C1F]", 
-      link: "https://www.tripadvisor.com",
-      description: "Fly to Bali for free and enjoy a once-in-a-lifetime vacation." 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=63695",
+      description: "Enter your details for a chance to win. (Spain - ANDROID)" 
     },
+
+    // CPA Links
     { 
-      title: "Get Free Amazon Vouchers", 
-      img: amazonGiftChaptgpt, 
+      title: "You can become a Millionaire!", 
+      img: BecomeAMillionaire, 
       bg: "bg-indigo-900", 
       headerBg: "bg-indigo-950", 
       btnBg: "bg-indigo-950", 
       btnHover: "hover:bg-indigo-900", 
-      link: "https://www.amazon.com/vouchers",
-      description: "Shop freely with exclusive Amazon voucher giveaways." 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=54746",
+      description: "Enter your details for a chance to win. (Bangladesh - ANDROID)" 
     },
   ]
 
