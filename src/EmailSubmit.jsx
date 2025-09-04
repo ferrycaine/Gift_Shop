@@ -27,7 +27,7 @@ const EmailSubmit = () => {
         <section id="exclusive" className="p-12 bg-lime-200 mt-20 rounded-4xl max-w-[1380px] mx-auto">
             <div className="px-4 sm:px-6 lg:px-8">
                 <h2 className="font-bold text-center mb-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-                    Exclusive Offers!
+                    Exclusive Mine Offers!
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
