@@ -1,11 +1,11 @@
-import iphone16 from './assets/iphonechatgpt.jpg'
+import NFLShopGiftCard from './assets/NFLShopGiftCard.png'
 import macbook from './assets/macbookchatgpt.png'
 import GrabYourWalmartGiftCard from './assets/GrabYourWalmartGiftCard.png'
 import triptobalichatgpt from './assets/triptobalichatgpt.png'
 import amazonGiftChaptgpt from './assets/amazonGiftChaptgpt.png'
 import gamingChapgpt from './assets/gamingChapgpt.png'
 import spotifyChatgpt from './assets/spotifyChatgpt.png'
-import LululemonGiftCard from './assets/LululemonGiftCard.png'
+import ElevenGiftCard from './assets/ElevenGiftCard.png'
 import { useState } from 'react'
 
 const FreeCardSection2 = () => {
@@ -19,30 +19,34 @@ const FreeCardSection2 = () => {
       btnBg: "bg-amber-950", 
       btnHover: "hover:bg-amber-800", 
       link: "https://singingfiles.com/show.php?l=0&u=2442448&id=69869",
-      description: "Enter your information now for a chance to win." 
+      description: "Enter your information now for a chance to win. (US - IOS)" 
     },
+    
     // CPA Links
     { 
-      title: "Take a chance at a $100 Lululemon Gift Card!", 
-      img: LululemonGiftCard, 
+      title: "Be the one to get a 7-Eleven Gift Card!", 
+      img: ElevenGiftCard, 
       bg: "bg-red-900", 
       headerBg: "bg-red-950", 
       btnBg: "bg-red-950", 
       btnHover: "hover:bg-red-900", 
-      link: "https://example.com/$100-USA",
-      description: "Enter your information now for a chance to win." 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=69083",
+      description: "Enter your information now for a chance to win. (US - IOS)" 
     },
-    
+
+    // CPA Links
     { 
-      title: "Win an iPhone 16 Pro! Join Now", 
-      img: iphone16, 
+      title: "Enter for a chance at a NFL Shop Gift Card!", 
+      img: NFLShopGiftCard, 
       bg: "bg-slate-800", 
       headerBg: "bg-slate-900", 
       btnBg: "bg-slate-900", 
-      btnHover: "hover:bg-slate-700", 
-      link: "https://www.apple.com",
-      description: "Limited time offer! Get the new iPhone 16 Pro for free." 
+      btnHover: "hover:bg-slate-700",   
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=69462",
+      description: "Enter your information now for a chance to win. (US - ANDROID)" 
     },
+
+    // CPA Links
     { 
       title: "Get a Free MacBook Today", 
       img: macbook, 
