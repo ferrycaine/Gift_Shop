@@ -1,11 +1,13 @@
-import YourOpinionMattersChatgpt1 from './assets/For_Survays/YourOpinionMattersChatgpt1.png'
-import EarnRewardsChatgpt from './assets/For_Survays/EarnRewardsChatgpt.png'
-import EasyTasksChatGpt from './assets/For_Survays/EasyTasksChatGpt.png'
-import InstantRewardsChatgpt from './assets/For_Survays/InstantRewardsChatgpt.png'
-import Answerwinchatgpt from './assets/For_Survays/Answer&winchatgpt.png'
-import TrustedSurveysChatgpt from './assets/For_Survays/TrustedSurveysChatgpt.png'
-import SmartChoiceChatgpt from './assets/For_Survays/Smart ChoiceChatgpt.png'
-import RewardZonechatgpt from './assets/For_Survays/RewardZonechatgpt.png'
+//  OG Offers
+
+import YourOpinionMattersChatgpt1 from './assets/For_OG/YourOpinionMattersChatgpt1.png'
+import EarnRewardsChatgpt from './assets/For_OG/EarnRewardsChatgpt.png'
+import EasyTasksChatGpt from './assets/For_OG/EasyTasksChatGpt.png'
+import InstantRewardsChatgpt from './assets/For_OG/InstantRewardsChatgpt.png'
+import Answerwinchatgpt from './assets/For_OG/Answer&winchatgpt.png'
+import TrustedSurveysChatgpt from './assets/For_OG/TrustedSurveysChatgpt.png'
+import SmartChoiceChatgpt from './assets/For_OG/Smart ChoiceChatgpt.png'
+import RewardZonechatgpt from './assets/For_OG/RewardZonechatgpt.png'
 
 const SurvaySubmit = () => {
     const cards = [

@@ -1,11 +1,14 @@
-import NFLShopGiftCard from './assets/NFLShopGiftCard.png'
-import GetthelatestSamsungS25 from './assets/GetthelatestSamsungS25.png'
-import DunkinDonutsGiftCard from './assets/DunkinDonutsGiftCard.png'
-import triptobalichatgpt from './assets/triptobalichatgpt.png'
-import amazonGiftChaptgpt from './assets/amazonGiftChaptgpt.png'
-import gamingChapgpt from './assets/gamingChapgpt.png'
-import spotifyChatgpt from './assets/spotifyChatgpt.png'
-import ElevenGiftCard from './assets/ElevenGiftCard.png'
+//  GRIP Offers
+
+import NFLShopGiftCard from './assets/For_GRIP/NFLShopGiftCard.png'
+import GetthelatestSamsungS25 from './assets/For_GRIP/GetthelatestSamsungS25.png'
+import DunkinDonutsGiftCard from './assets/For_GRIP/DunkinDonutsGiftCard.png'
+import triptobalichatgpt from './assets/For_GRIP/triptobalichatgpt.png'
+import amazonGiftChaptgpt from './assets/For_GRIP/amazonGiftChaptgpt.png'
+import gamingChapgpt from './assets/For_GRIP/gamingChapgpt.png'
+import spotifyChatgpt from './assets/For_GRIP/spotifyChatgpt.png'
+import ElevenGiftCard from './assets/For_GRIP/ElevenGiftCard.png'
+
 import { useState } from 'react'
 
 const FreeCardSection2 = () => {

@@ -1,11 +1,13 @@
-import ExclusiveDealsChatGPT from './assets/For_Emails/ExclusiveDealsChatGPT.png'
-import JoinTheClub from './assets/For_Emails/JoinTheClub.png'
-import SpecialOffersChaptgpt from './assets/For_Emails/SpecialOffersChaptgpt.png'
-import DirectToyouChatGPT from './assets/For_Emails/DirectToyouChatGPT.png'
-import DiscoverMoreChatgpt from './assets/For_Emails/DiscoverMoreChatgpt.png'
-import DonMissOutChatGPT from './assets/For_Emails/DonMissOutChatGPT.png'
-import GetTheSecrectsChatgpt from './assets/For_Emails/GetTheSecrectsChatgpt.png'
-import UnlockHiddenGemschatgpt from './assets/For_Emails/UnlockHiddenGemschatgpt.png'
+//  Mine Offers
+
+import ExclusiveDealsChatGPT from './assets/For_MINE/ExclusiveDealsChatGPT.png'
+import JoinTheClub from './assets/For_MINE/JoinTheClub.png'
+import SpecialOffersChaptgpt from './assets/For_MINE/SpecialOffersChaptgpt.png'
+import DirectToyouChatGPT from './assets/For_MINE/DirectToyouChatGPT.png'
+import DiscoverMoreChatgpt from './assets/For_MINE/DiscoverMoreChatgpt.png'
+import DonMissOutChatGPT from './assets/For_MINE/DonMissOutChatGPT.png'
+import GetTheSecrectsChatgpt from './assets/For_MINE/GetTheSecrectsChatgpt.png'
+import UnlockHiddenGemschatgpt from './assets/For_MINE/UnlockHiddenGemschatgpt.png'
 
 const EmailSubmit = () => {
     const cards = [
