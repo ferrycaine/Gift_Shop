@@ -8,6 +8,8 @@ import BecomeAMillionaire from './assets/For_GRIP/BecomeAMillionaire.png'
 import StartPreparingForEaster from './assets/For_GRIP/StartPreparingForEaster.png'
 import MysteryBoxPrize from './assets/For_GRIP/MysteryBoxPrize.png'
 import ElevenGiftCard from './assets/For_GRIP/ElevenGiftCard.png'
+import VBucksInFortnite from './assets/For_GRIP/VBucksInFortnite.png'
+import ElevenGiftCard7 from './assets/For_GRIP/7ElevenGiftCard.png'
 
 import { useState } from 'react'
 
@@ -97,6 +99,7 @@ const FreeCardSection2 = () => {
       description: "Enter your details for a chance to win. (Spain - ANDROID)" 
     },
 
+    
     // CPA Links
     { 
       title: "You can become a Millionaire!", 
@@ -107,6 +110,30 @@ const FreeCardSection2 = () => {
       btnHover: "hover:bg-indigo-900", 
       link: "https://singingfiles.com/show.php?l=0&u=2442448&id=54746",
       description: "Enter your details for a chance to win. (Bangladesh - ANDROID)" 
+    },
+
+    // CPA Links
+    { 
+      title: "Get Your 5000 V-Bucks in Fortnite!", 
+      img: VBucksInFortnite, 
+      bg: "bg-emerald-900", 
+      headerBg: "bg-emerald-950", 
+      btnBg: "bg-emerald-950", 
+      btnHover: "hover:bg-indigo-900", 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=57976",
+      description: "Enter your details for a chance to win. (New Zealand- IOS)" 
+    },
+
+    // CPA Links
+    { 
+      title: "Enter for a chance at a $500 7 Eleven Gift Card!", 
+      img: ElevenGiftCard7, 
+      bg: "bg-amber-800", 
+      headerBg: "bg-amber-950", 
+      btnBg: "bg-amber-950", 
+      btnHover: "hover:bg-amber-800", 
+      link: "https://singingfiles.com/show.php?l=0&u=2442448&id=69339",
+      description: "Enter your information now for a chance to win. (CANADA - IOS)" 
     },
   ]
 
