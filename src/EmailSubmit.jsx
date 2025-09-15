@@ -1,8 +1,7 @@
 //  Mine Offers
-
-import ExclusiveDealsChatGPT from './assets/For_MINE/ExclusiveDealsChatGPT.png'
-import JoinTheClub from './assets/For_MINE/JoinTheClub.png'
-import SpecialOffersChaptgpt from './assets/For_MINE/SpecialOffersChaptgpt.png'
+import Netflix_Job from './assets/For_MINE/netflix_job_Gemeni.png'
+import Costo_750 from './assets/For_MINE/Costo_750_Gemeni.png'
+import Unclaimed_Money from './assets/For_MINE/Unclaimed_Money.png'
 import DirectToyouChatGPT from './assets/For_MINE/DirectToyouChatGPT.png'
 import DiscoverMoreChatgpt from './assets/For_MINE/DiscoverMoreChatgpt.png'
 import DonMissOutChatGPT from './assets/For_MINE/DonMissOutChatGPT.png'
@@ -11,14 +10,14 @@ import UnlockHiddenGemschatgpt from './assets/For_MINE/UnlockHiddenGemschatgpt.p
 
 const EmailSubmit = () => {
     const cards = [
+        { title: "Netflix Jobs", desc: "American Career Guide - Netflix Jobs (USA - All Device)", img: Netflix_Job, bg: "bg-gradient-to-b from-indigo-700 to-indigo-900", headerBg: "bg-indigo-950", btnBg: "bg-indigo-950", btnHover: "hover:bg-indigo-800", link: "https://www.af9m8trk.com/AUX11FLX/5RM125D9/" },
+        { title: "Costco $750", desc: "UpLevelRewards - Costco $750 (USA - All Device)", img: Costo_750, bg: "bg-gradient-to-b from-amber-600 to-amber-800", headerBg: "bg-amber-950", btnBg: "bg-amber-950", btnHover: "hover:bg-amber-800", link: "https://example.com/join-the-club" },
+        { title: "Unclaimed Money", desc: "Finderish - Unclaimed Money (USA - All Device)", img: Unclaimed_Money, bg: "bg-gradient-to-b from-rose-700 to-rose-900", headerBg: "bg-rose-950", btnBg: "bg-rose-950", btnHover: "hover:bg-rose-800", link: "https://example.com/discover-more" },
         { title: "Get the Secrets", desc: "Insider tricks you won’t find online.", img: DiscoverMoreChatgpt, bg: "bg-gradient-to-b from-orange-700 to-orange-900", headerBg: "bg-orange-950", btnBg: "bg-orange-950", btnHover: "hover:bg-orange-800", link: "https://example.com/get-the-secrets" },
-        { title: "Exclusive Deals", desc: "Unlock discounts only for subscribers.", img: ExclusiveDealsChatGPT, bg: "bg-gradient-to-b from-indigo-700 to-indigo-900", headerBg: "bg-indigo-950", btnBg: "bg-indigo-950", btnHover: "hover:bg-indigo-800", link: "https://example.com/exclusive-deals" },
-        { title: "Join the Club", desc: "Become part of our growing community.", img: JoinTheClub, bg: "bg-gradient-to-b from-amber-600 to-amber-800", headerBg: "bg-amber-950", btnBg: "bg-amber-950", btnHover: "hover:bg-amber-800", link: "https://example.com/join-the-club" },
         { title: "Unlock Hidden Gems", desc: "Content too good to post anywhere else.", img: DonMissOutChatGPT, bg: "bg-gradient-to-b from-purple-700 to-purple-900", headerBg: "bg-purple-950", btnBg: "bg-purple-950", btnHover: "hover:bg-purple-800", link: "https://example.com/unlock-hidden-gems" },
         { title: "Special Offers", desc: "Enjoy subscriber-only promotions.", img: GetTheSecrectsChatgpt, bg: "bg-gradient-to-b from-stone-500 to-stone-700", headerBg: "bg-stone-900", btnBg: "bg-stone-900", btnHover: "hover:bg-stone-700", link: "https://example.com/special-offers" },
         { title: "Direct to You", desc: "No searching just get free delivered.", img: DirectToyouChatGPT, bg: "bg-gradient-to-b from-cyan-600 to-cyan-900", headerBg: "bg-cyan-950", btnBg: "bg-cyan-950", btnHover: "hover:bg-cyan-800", link: "https://example.com/direct-to-you" },
-        { title: "Dont Miss Out", desc: "The good stuff only comes to your inbox.", img: UnlockHiddenGemschatgpt, bg: "bg-gradient-to-b from-emerald-600 to-emerald-900", headerBg: "bg-emerald-950", btnBg: "bg-emerald-950", btnHover: "hover:bg-emerald-800", link: "https://example.com/dont-miss-out" },
-        { title: "Discover More", desc: "Find new exclusive opportunities weekly.", img: SpecialOffersChaptgpt, bg: "bg-gradient-to-b from-rose-700 to-rose-900", headerBg: "bg-rose-950", btnBg: "bg-rose-950", btnHover: "hover:bg-rose-800", link: "https://example.com/discover-more" }
+        { title: "Dont Miss Out", desc: "The good stuff only comes to your inbox.", img: UnlockHiddenGemschatgpt, bg: "bg-gradient-to-b from-emerald-600 to-emerald-900", headerBg: "bg-emerald-950", btnBg: "bg-emerald-950", btnHover: "hover:bg-emerald-800", link: "https://example.com/dont-miss-out" }
     ]
 
     const handleClaimClick = (link) => {
